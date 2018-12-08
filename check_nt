@@ -1,0 +1,5 @@
+# Used Disk. -l  drive letter
+check_nt -H $HOSTADDRESS$ -p 12489 -l C -w $ARG1$ -c $ARG2$ -v USEDDISKSPACE
+
+# Memory Used
+check_nt -H $HOSTADDRESS$ -p 12489 -w $ARG1$ -c $ARG2$ -v MEMUSE
