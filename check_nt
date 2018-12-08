@@ -10,3 +10,6 @@ check_nt -H $HOSTADDRESS$ -p 12489 -s $ARG1$  -v CPULOAD -l 5,80,90,10,80,90
 # Uptime
 check_nt -H $HOSTADDRESS$ -p 12489 -s $ARG1$  -v UPTIME
 
+# NSClient version
+check_nt -H $HOSTADDRESS$ -p 12489 -s $ARG1$  -v CLIENTVERSION
+
