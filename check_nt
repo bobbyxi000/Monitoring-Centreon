@@ -3,3 +3,10 @@ check_nt -H $HOSTADDRESS$ -p 12489 -l C -w $ARG1$ -c $ARG2$ -v USEDDISKSPACE
 
 # Memory Used
 check_nt -H $HOSTADDRESS$ -p 12489 -w $ARG1$ -c $ARG2$ -v MEMUSE
+
+# CPU Used. 5m and 10m checks
+check_nt -H $HOSTADDRESS$ -p 12489 -s $ARG1$  -v CPULOAD -l 5,80,90,10,80,90
+
+# Uptime
+check_nt -H $HOSTADDRESS$ -p 12489 -s $ARG1$  -v UPTIME
+
